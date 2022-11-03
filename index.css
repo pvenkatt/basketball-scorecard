@@ -1,0 +1,125 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(27, 36, 74, 1);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-family: "Verdana", sans-serif;
+  color: rgba(238, 238, 238, 1);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  color: rgba(238, 238, 238, 1);
+  text-align: center;
+}
+
+.home,
+.guest {
+  width: 18em;
+  padding: 1em;
+}
+
+h1 {
+  font-family: "Cursed Timer ULiL", sans-serif;
+  font-size: 5.625rem;
+  text-align: center;
+  color: rgba(249, 79, 109, 1);
+  padding-top: 0.18em;
+}
+
+h3 {
+  font-family: "Verdana", sans-serif;
+  font-size: 2.5rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.4em;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.plus-one-btn:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+.plus-two-btn:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+.plus-three-btn:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.scoreboard-home,
+.scoreboard-guest {
+  width: 8.75em;
+  background-color: rgba(8, 0, 1, 1);
+  margin: 1.25em auto;
+  border-radius: 5px;
+}
+
+.plus-one-btn,
+.plus-two-btn,
+.plus-three-btn {
+  border: 0;
+  padding: 0.5625em;
+  cursor: pointer;
+  background-color: transparent;
+  color: whitesmoke;
+  border: 2px solid rgba(154, 171, 216, 1);
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-family: "Cursed Timer ULiL", sans-serif;
+}
+.reset {
+  border: 0;
+  height: 50px;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgba(220, 0, 0, 1);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.reset:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.reset:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 667px) {
+  .container {
+    margin: 5em;
+  }
+}
